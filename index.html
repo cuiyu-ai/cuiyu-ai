@@ -1,19 +1,272 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title></title>
-    <style>
-        body {
-            text-align: center;
-            margin-top: 100px;
-            font-family: Arial;
-        }
-        p {
-            font-size: 18px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Yu Cui - Homepage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-color: #0d6efd;
+      --text-dark: #2c3e50;
+      --text-muted: #6c757d;
+      --bg-light: #f4f6f9;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, sans-serif;
+      padding: 2.5rem 0;
+      color: #343a40;
+    }
+
+    .container {
+      max-width: 1000px;
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 2.5rem 3rem;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .profile-header {
+      border-bottom: 1px solid #e9ecef;
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .profile-header h2 {
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 0.25rem;
+    }
+
+    .profile-header .lead {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: #495057;
+    }
+
+    .contact-info {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .nav-tabs {
+      border-bottom: 2px solid #e9ecef;
+    }
+
+    .nav-tabs .nav-link {
+      border: none;
+      font-weight: 500;
+      padding: 0.75rem 1.75rem;
+      color: #495057;
+    }
+
+    .nav-tabs .nav-link.active {
+      color: var(--primary-color);
+      font-weight: 600;
+      border-bottom: 3px solid var(--primary-color);
+      background: transparent;
+    }
+
+    .tab-content {
+      padding-top: 2rem;
+      min-height: 420px;
+    }
+
+    h5 {
+      font-weight: 600;
+      color: var(--text-dark);
+      border-left: 4px solid var(--primary-color);
+      padding-left: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    p {
+      line-height: 1.7;
+    }
+
+    .card {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      margin-bottom: 1.25rem;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 26px rgba(0,0,0,0.10);
+    }
+
+    .card-title {
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+
+    .news-date {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+      margin-left: 1rem;
+    }
+
+    ul {
+      padding-left: 1.1rem;
+    }
+
+    ul li {
+      margin-bottom: 0.6rem;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--primary-color);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
-    <p>I am Yu Cui. My research interests include Embodied Foundation Models, Inference Optimization for LLMs, and Provably Secure AI.</p>
+<div class="container">
+
+  <div class="profile-header">
+    <h2>Yu Cui</h2>
+    <div class="contact-info">
+      Email: cuiyu@bit.edu.cn
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <ul class="nav nav-tabs" id="mainTab" role="tablist">
+    <li class="nav-item">
+      <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#home">Research</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#life">Life</button>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+
+    <!-- Home -->
+    <div class="tab-pane fade show active" id="home">
+      <h5>About Me</h5>
+      <p>
+        I am Yu Cui, a humorous AI researcher, advised by <a href="https://bchainzhang.github.io/" target="_blank">Haibin Zhang</a> and <a href="https://fififish.github.io/sisiduan/" target="_blank">Sisi Duan</a>. My research interests include LLM Inference Optimization and AI Safety.
+
+      </p>
+
+      
+
+      <h5 class="mt-4">Recent Thoughts & News</h5>
+
+      
+
+      <div class="card">
+        <div class="card-body d-flex justify-content-between">
+          <div>
+            <h6 class="card-title mb-1">News</h6>
+            <p class="mb-0">Two first author papers at ACL 2026.</p>
+          </div>
+          <span class="news-date">2026-04</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body d-flex justify-content-between">
+          <div>
+            <h6 class="card-title mb-1">News</h6>
+            <p class="mb-0">One paper at IOT.</p>
+          </div>
+          <span class="news-date">2026-04</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body d-flex justify-content-between">
+          <div>
+            <h6 class="card-title mb-1">News</h6>
+            <p class="mb-0">Our Free-MAD system was featured by MIT Technology Review.</p>
+          </div>
+          <span class="news-date">2026-03</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body d-flex justify-content-between">
+          <div>
+            <h6 class="card-title mb-1">News</h6>
+            <p class="mb-0">One paper at IOT.</p>
+          </div>
+          <span class="news-date">2026-03</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body d-flex justify-content-between">
+          <div>
+            <h6 class="card-title mb-1">News</h6>
+            <p class="mb-0">One first author paper at EACL 2026.</p>
+          </div>
+          <span class="news-date">2026-01</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body d-flex justify-content-between">
+          <div>
+            <h6 class="card-title mb-1">News</h6>
+            <p class="mb-0">National Scholarship.</p>
+          </div>
+          <span class="news-date">2024-02</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body d-flex justify-content-between">
+          <div>
+            <h6 class="card-title mb-1">News</h6>
+            <p class="mb-0">FISCO BCOS 2021 MVP (Most Valuable Professional).</p>
+          </div>
+          <span class="news-date">2021-12</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Life -->
+    <div class="tab-pane fade" id="life">
+
+      <div class="card">
+        <div class="card-body d-flex justify-content-between">
+          <div>
+            <h6 class="card-title mb-1">Essay</h6>
+            <p class="mb-0">I've lost much along the journey, but gained far more.</p>
+          </div>
+          <span class="news-date">2026-01-31</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body d-flex justify-content-between">
+          <div>
+            <h6 class="card-title mb-1">Essay</h6>
+            <p class="mb-0">As long as I'm still alive, no one can deny the possibility that I might win a Nobel Prize.</p>
+          </div>
+          <span class="news-date">2026-01</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
